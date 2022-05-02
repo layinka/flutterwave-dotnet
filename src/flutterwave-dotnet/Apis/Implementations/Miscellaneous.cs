@@ -29,5 +29,15 @@ namespace Flutterwave.Net
             return _flutterwaveApi.Post<VerifyBankAccountResponse>(
                 Endpoints.BANK_ACCOUNT_VERIFICATION, data);
         }
+
+        /// <summary>
+        /// Verify a BVN number
+        /// </summary>
+        /// <param name="bvn">The Valid BVN Number you want to verify</param>
+        /// <returns>The customers details</returns>
+        public VerifyBVNResponse VerifyBVN(string bvn)
+        {
+            return _flutterwaveApi.Get<VerifyBVNResponse>($"{Endpoints.BVN_VERIFICATION}/{bvn}" );
+        }
     }
 }

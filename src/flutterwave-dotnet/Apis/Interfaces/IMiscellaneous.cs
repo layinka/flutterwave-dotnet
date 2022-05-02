@@ -13,5 +13,13 @@
         /// </param>
         /// <returns>The bank account name and number</returns>
         public VerifyBankAccountResponse VerifyBankAccount(string accountNumber, string bankCode);
+
+
+        /// <summary>
+        /// Verify a BVN number
+        /// </summary>
+        /// <param name="bvn">The Valid BVN Number you want to verify</param>
+        /// <returns>The customers details</returns>
+        public VerifyBVNResponse VerifyBVN(string bvn);
     }
 }
