@@ -7,5 +7,7 @@
         public IPayments Payments { get; }
         public ISubAccounts SubAccounts { get; }
         public ITransactions Transactions { get; }
+
+        public ITransfers Transfers { get; }
     }
 }

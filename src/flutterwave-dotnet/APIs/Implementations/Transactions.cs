@@ -1,5 +1,6 @@
 ﻿using Flutterwave.Net.Utilities;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Flutterwave.Net
 {
@@ -140,6 +141,20 @@ namespace Flutterwave.Net
         public VerifyTransactionResponse VerifyTransaction(int transactionId)
         {
             return _flutterwaveApi.Get<VerifyTransactionResponse>(
+                $"{Endpoints.TRANSACTIONS}/{transactionId}/verify");
+        }
+
+        /// <summary>
+        /// Verify a transaction
+        /// </summary>
+        /// <param name="transactionId">
+        /// This is the transaction unique identifier. It is returned in the Get transactions 
+        /// call as data.Id
+        /// </param>
+        /// <returns>The transaction with the specified id</returns>
+        public Task<VerifyTransactionResponse> VerifyTransactionAsync(int transactionId)
+        {
+            return _flutterwaveApi.GetAsync<VerifyTransactionResponse>(
                 $"{Endpoints.TRANSACTIONS}/{transactionId}/verify");
         }
 

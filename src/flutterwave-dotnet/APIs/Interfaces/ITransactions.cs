@@ -1,4 +1,6 @@
-﻿namespace Flutterwave.Net
+﻿using System.Threading.Tasks;
+
+namespace Flutterwave.Net
 {
     public interface ITransactions
     {
@@ -57,6 +59,8 @@
         /// </param>
         /// <returns>The transaction with the specified id</returns>
         public VerifyTransactionResponse VerifyTransaction(int transactionId);
+
+        public Task<VerifyTransactionResponse> VerifyTransactionAsync(int transactionId);
 
         /// <summary>
         /// View transaction timeline
