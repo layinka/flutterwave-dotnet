@@ -23,7 +23,7 @@ namespace Flutterwave.Net
         public string LastName { get; set; }
 
         [JsonProperty("date_of_birth")]
-        public string DateOfBirth { get; set; }
+        public DateOnly DateOfBirth { get; set; }
 
         [JsonProperty("phone_number")]
         public string PhoneNumber { get; set; }
@@ -38,16 +38,16 @@ namespace Flutterwave.Net
         public string EnrollmentBranch { get; set; }
 
         [JsonProperty("image_base_64")]
-        public object ImageBase64 { get; set; }
+        public string ImageBase64 { get; set; }
 
         [JsonProperty("address")]
-        public object Address { get; set; }
+        public string Address { get; set; }
 
         [JsonProperty("gender")]
         public string Gender { get; set; }
 
         [JsonProperty("email")]
-        public object Email { get; set; }
+        public string Email { get; set; }
 
         [JsonProperty("watch_listed")]
         public object WatchListed { get; set; }
@@ -56,13 +56,13 @@ namespace Flutterwave.Net
         public string Nationality { get; set; }
 
         [JsonProperty("marital_status")]
-        public object MaritalStatus { get; set; }
+        public string MaritalStatus { get; set; }
 
         [JsonProperty("state_of_residence")]
-        public object StateOfResidence { get; set; }
+        public string StateOfResidence { get; set; }
 
         [JsonProperty("lga_of_residence")]
-        public object LgaOfResidence { get; set; }
+        public string LgaOfResidence { get; set; }
 
         [JsonProperty("image")]
         public object Image { get; set; }

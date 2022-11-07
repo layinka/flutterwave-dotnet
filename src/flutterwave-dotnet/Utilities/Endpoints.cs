@@ -12,5 +12,6 @@
         public static string SUB_ACCOUNTS = "subaccounts";
         public static string TRANSACTION_FEE = "transactions/fee";
         public static string TRANSACTIONS = "transactions";
+        public static string TRANSFERS = "transfers";
     }
 }
