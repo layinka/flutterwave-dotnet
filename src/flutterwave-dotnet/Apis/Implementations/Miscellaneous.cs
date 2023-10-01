@@ -47,7 +47,7 @@ namespace Flutterwave.Net
             var data = new VerifyBankAccountRequest(accountNumber, bankCode);
 
             return _flutterwaveApi.PostAsync<VerifyBankAccountResponse>(
-                Endpoints.BANK_ACCOUNT_VERIFICATION, data);
+                Endpoints.BANK_ACCOUNT_VERIFICATION, data); 
         }
 
         /// <summary>
