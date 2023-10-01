@@ -81,7 +81,7 @@ namespace Flutterwave.Net
         /// <param name="lastName">The customer's last name</param>
         /// <param name="redirectUrl">The link to redirect the customer after giving consent.</param>
         /// <returns>The consent link</returns>
-        public InitiateBVNConsentResponse InitiateBVNConsentAsync(string bvn, string firstName, string lastName, string redirectUrl)
+        public Task<InitiateBVNConsentResponse> InitiateBVNConsentAsync(string bvn, string firstName, string lastName, string redirectUrl)
         {
             var data = new InitiateBVNConsentRequest
             {
@@ -90,7 +90,7 @@ namespace Flutterwave.Net
                 LastName = lastName,
                 RedirectUrl = redirectUrl
             };
-            return _flutterwaveApi.Post<InitiateBVNConsentResponse>($"{Endpoints.BVN_INITIATE_CONSENT}", data);
+            return _flutterwaveApi.PostAsync<InitiateBVNConsentResponse>($"{Endpoints.BVN_INITIATE_CONSENT}", data);
         }
 
         /// <summary>
