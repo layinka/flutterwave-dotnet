@@ -13,144 +13,143 @@ namespace Flutterwave.Net
     {
         [JsonProperty("nin", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("nin")]
-        public string nin { get; set; }
+        public string Nin { get; set; }
 
         [JsonProperty("email", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("email")]
-        public string email { get; set; }
+        public string Email { get; set; }
 
         [JsonProperty("gender", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("gender")]
-        public string gender { get; set; }
+        public string Gender { get; set; }
 
         [JsonProperty("surname", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("surname")]
-        public string surname { get; set; }
+        public string Surname { get; set; }
 
         [JsonProperty("serialNo", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("serialNo")]
-        public object serialNo { get; set; }
+        public object SerialNo { get; set; }
 
         [JsonProperty("faceImage", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("faceImage")]
-        public string faceImage { get; set; }
+        public string FaceImage { get; set; }
 
         [JsonProperty("firstName", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("firstName")]
-        public string firstName { get; set; }
+        public string FirstName { get; set; }
 
         [JsonProperty("landmarks", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("landmarks")]
-        public object landmarks { get; set; }
+        public object Landmarks { get; set; }
 
         [JsonProperty("branchName", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("branchName")]
-        public object branchName { get; set; }
+        public object BranchName { get; set; }
 
         [JsonProperty("middleName", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("middleName")]
-        public string middleName { get; set; }
+        public string MiddleName { get; set; }
 
         [JsonProperty("nameOnCard", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("nameOnCard")]
-        public object nameOnCard { get; set; }
+        public object NameOnCard { get; set; }
 
         [JsonProperty("dateOfBirth", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("dateOfBirth")]
-        public string dateOfBirth { get; set; }
+        public string DateOfBirth { get; set; }
 
         [JsonProperty("lgaOfOrigin", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("lgaOfOrigin")]
-        public string lgaOfOrigin { get; set; }
+        public string LgaOfOrigin { get; set; }
 
         [JsonProperty("watchlisted", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("watchlisted")]
-        public string watchlisted { get; set; }
+        public string Watchlisted { get; set; }
 
         [JsonProperty("lgaOfCapture", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("lgaOfCapture")]
-        public object lgaOfCapture { get; set; }
+        public object LgaOfCapture { get; set; }
 
         [JsonProperty("phoneNumber1", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("phoneNumber1")]
-        public string phoneNumber1 { get; set; }
+        public string PhoneNumber1 { get; set; }
 
         [JsonProperty("phoneNumber2", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("phoneNumber2")]
-        public object phoneNumber2 { get; set; }
+        public object PhoneNumber2 { get; set; }
 
         [JsonProperty("maritalStatus", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("maritalStatus")]
-        public string maritalStatus { get; set; }
+        public string MaritalStatus { get; set; }
 
         [JsonProperty("stateOfOrigin", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("stateOfOrigin")]
-        public string stateOfOrigin { get; set; }
+        public string StateOfOrigin { get; set; }
 
         [JsonProperty("enrollBankCode", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("enrollBankCode")]
-        public object enrollBankCode { get; set; }
+        public object EnrollBankCode { get; set; }
 
         [JsonProperty("enrollUserName", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("enrollUserName")]
-        public string enrollUserName { get; set; }
+        public string EnrollUserName { get; set; }
 
         [JsonProperty("enrollmentDate", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("enrollmentDate")]
-        public object enrollmentDate { get; set; }
+        public object EnrollmentDate { get; set; }
 
         [JsonProperty("lgaOfResidence", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("lgaOfResidence")]
-        public string lgaOfResidence { get; set; }
+        public string LgaOfResidence { get; set; }
 
         [JsonProperty("stateOfCapture", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("stateOfCapture")]
-        public string stateOfCapture { get; set; }
+        public string StateOfCapture { get; set; }
 
         [JsonProperty("additionalInfo1", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("additionalInfo1")]
-        public object additionalInfo1 { get; set; }
+        public object AdditionalInfo1 { get; set; }
 
         [JsonProperty("productReference", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("productReference")]
-        public string productReference { get; set; }
+        public string ProductReference { get; set; }
 
         [JsonProperty("stateOfResidence", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("stateOfResidence")]
-        public string stateOfResidence { get; set; }
+        public string StateOfResidence { get; set; }
     }
 
     public class BVN
     {
         [JsonProperty("first_name", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("first_name")]
-        public string first_name { get; set; }
+        public string FirstName { get; set; }
 
         [JsonProperty("last_name", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("last_name")]
-        public string last_name { get; set; }
+        public string LastName { get; set; }
 
         [JsonProperty("status", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("status")]
-        public string status { get; set; }
+        public string Status { get; set; }
 
         [JsonProperty("reference", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("reference")]
-        public string reference { get; set; }
+        public string Reference { get; set; }
 
         [JsonProperty("callback_url", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("callback_url")]
-        public object callback_url { get; set; }
+        public object CallbackUrl { get; set; }
 
         [JsonProperty("bvn_data", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("bvn_data")]
-        public BvnData bvn_data { get; set; }
+        public BvnData BvnData { get; set; }
 
         [JsonProperty("created_at", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("created_at")]
-        public DateTime created_at { get; set; }
+        public DateTime CreatedAt { get; set; }
     }
-
     //public class BVN
     //{
     //    [JsonProperty("bvn")]
