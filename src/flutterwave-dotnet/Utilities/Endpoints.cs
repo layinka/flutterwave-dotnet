@@ -3,7 +3,8 @@
     class Endpoints
     {
         
-        public static string BVN_VERIFICATION = "kyc/bvns";
+        public static string BVN_VERIFICATION = "bvn/verifications";
+        public static string BVN_INITIATE_CONSENT = "bvn/verifications";
         public static string BANK_ACCOUNT_VERIFICATION = "accounts/resolve";
         public static string BANKS = "banks";
         public static string FLUTTERWAVE_API_BASE_URL = "https://api.flutterwave.com/v3/";

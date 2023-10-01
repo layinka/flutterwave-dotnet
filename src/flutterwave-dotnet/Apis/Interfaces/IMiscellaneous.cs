@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using Flutterwave.Net.Responses;
+using System.Threading.Tasks;
 
 namespace Flutterwave.Net
 {
@@ -30,17 +31,37 @@ namespace Flutterwave.Net
 
 
         /// <summary>
-        /// Verify a BVN number
+        /// Initiate BVN consent flow for your customer
         /// </summary>
-        /// <param name="bvn">The Valid BVN Number you want to verify</param>
-        /// <returns>The customers details</returns>
-        public VerifyBVNResponse VerifyBVN(string bvn);
+        /// <param name="bvn">The bank verification number of the customer. It should be 11 digits.</param>
+        /// <param name="firstName">The customer's first name</param>
+        /// <param name="lastName">The customer's last name</param>
+        /// <param name="redirectUrl">The link to redirect the customer after giving consent.</param>
+        /// <returns>The consent link</returns>
+        public InitiateBVNConsentResponse InitiateBVNConsent(string bvn, string firstName, string lastName, string redirectUrl);
+
+        /// <summary>
+        /// Initiate BVN consent flow for your customer
+        /// </summary>
+        /// <param name="bvn">The bank verification number of the customer. It should be 11 digits.</param>
+        /// <param name="firstName">The customer's first name</param>
+        /// <param name="lastName">The customer's last name</param>
+        /// <param name="redirectUrl">The link to redirect the customer after giving consent.</param>
+        /// <returns>The consent link</returns>
+        public InitiateBVNConsentResponse InitiateBVNConsentAsync(string bvn, string firstName, string lastName, string redirectUrl);
 
         /// <summary>
         /// Verify a BVN number
         /// </summary>
-        /// <param name="bvn">The Valid BVN Number you want to verify</param>
+        /// <param name="consent_reference">The reference for the consent attempt.</param>
         /// <returns>The customers details</returns>
-        public Task<VerifyBVNResponse> VerifyBVNAsync(string bvn);
+        public VerifyBVNResponse VerifyBVN(string consent_reference);
+
+        /// <summary>
+        /// Verify a BVN number
+        /// </summary>
+        /// <param name="consent_reference">The reference for the consent attempt.</param>
+        /// <returns>The customers details</returns>
+        public Task<VerifyBVNResponse> VerifyBVNAsync(string consent_reference);
     }
 }
