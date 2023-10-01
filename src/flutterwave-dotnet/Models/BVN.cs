@@ -57,7 +57,7 @@ namespace Flutterwave.Net
 
         [JsonProperty("dateOfBirth", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("dateOfBirth")]
-        public string DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; set; }
 
         [JsonProperty("lgaOfOrigin", NullValueHandling = NullValueHandling.Ignore)]
         [JsonPropertyName("lgaOfOrigin")]
