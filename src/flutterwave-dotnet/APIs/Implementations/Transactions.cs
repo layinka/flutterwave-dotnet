@@ -113,7 +113,7 @@ namespace Flutterwave.Net
         /// (This parameter is called "wait" on the offical docs)
         /// </param>
         /// <returns>Success</returns>
-        public ResendTransactionWebhookResponse ResendTransactionWebhook(int transactionId, 
+        public ResendTransactionWebhookResponse ResendTransactionWebhook(long transactionId, 
                                                                          bool shouldWait = false)
         {
             Dictionary<string, string> queryParameters = null;
@@ -138,7 +138,7 @@ namespace Flutterwave.Net
         /// call as data.Id
         /// </param>
         /// <returns>The transaction with the specified id</returns>
-        public VerifyTransactionResponse VerifyTransaction(int transactionId)
+        public VerifyTransactionResponse VerifyTransaction(long transactionId)
         {
             return _flutterwaveApi.Get<VerifyTransactionResponse>(
                 $"{Endpoints.TRANSACTIONS}/{transactionId}/verify");
@@ -152,7 +152,7 @@ namespace Flutterwave.Net
         /// call as data.Id
         /// </param>
         /// <returns>The transaction with the specified id</returns>
-        public Task<VerifyTransactionResponse> VerifyTransactionAsync(int transactionId)
+        public Task<VerifyTransactionResponse> VerifyTransactionAsync(long transactionId)
         {
             return _flutterwaveApi.GetAsync<VerifyTransactionResponse>(
                 $"{Endpoints.TRANSACTIONS}/{transactionId}/verify");
@@ -166,7 +166,7 @@ namespace Flutterwave.Net
         /// call as data.Id
         /// </param>
         /// <returns>The events for the transaction with the specified id</returns>
-        public ViewTransactionTimelineResponse ViewTransactionTimeline(int transactionId)
+        public ViewTransactionTimelineResponse ViewTransactionTimeline(long transactionId)
         {
             return _flutterwaveApi.Get<ViewTransactionTimelineResponse>(
                 $"{Endpoints.TRANSACTIONS}/{transactionId}/events");

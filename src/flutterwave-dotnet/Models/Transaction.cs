@@ -7,7 +7,7 @@ namespace Flutterwave.Net
     public class Transaction
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         [JsonProperty("tx_ref")]
         public string TxRef { get; set; }
         [JsonProperty("flw_ref")]
